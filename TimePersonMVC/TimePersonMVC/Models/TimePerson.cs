@@ -18,7 +18,7 @@ namespace TimePersonMVC.Models
         public string Context { get; set; }
         public List<TimePerson> ReadPOTYFile(int start, int end)
         {
-            String[] stringPeople = System.IO.File.ReadAllLines("C:/Users/harry/Desktop/code/week1-dotnet/Lab11-MVC/TimePersonMVC/TimePersonMVC/personOfTheYear.csv");
+            String[] stringPeople = System.IO.File.ReadAllLines("personOfTheYear.csv");
             TimePerson[] timePeople = new TimePerson[stringPeople.Length - 1];
 
             for (int i = 1; i < stringPeople.Length; i++)
