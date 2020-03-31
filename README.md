@@ -8,7 +8,7 @@ This web application will show you all of TIME magazine's Person-Of-The-Year win
 
 ## Visual
 
-[Image 1](assets/Visual.png)
+![Image 1](assets/Visual.png)
 
 ## Use
 
