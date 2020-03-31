@@ -1,0 +1,51 @@
+﻿body > * {
+    text-align: center;
+}
+body {
+    border: 1px solid red;
+    width: 800px;
+    height: auto;
+    margin: 15vh auto 0;
+}
+h1, h2, h3 {
+    font-family: "Kameron" serif;
+    font-size: 20vh;
+    color: red;
+    line-height: 100%;
+}
+h2, h3 {
+    font-size: 5vh;
+    padding-bottom: 5vh;
+}
+
+main, div {
+    background-color: dimgrey;
+    border: 5px solid black;
+    margin-top: 7px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+p {
+    margin: 10px;
+}
+
+label {
+    text-align: justify;
+}
+
+main, div {
+    padding: 5%;
+}
+
+button {
+    display: block;
+    margin: 5px auto;
+}
+
+a {
+    background-color: red;
+    text-decoration: none;
+    margin: 10px 10px;
+    color: white;
+}

@@ -1,0 +1,28 @@
+﻿@model IEnumerable<TimePersonMVC.Models.TimePerson> 
+
+<!DOCTYPE html>
+<head>
+    <title>TIME Machine: Results!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kameron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/styles/Reset.css" type="text/css" />
+    <link rel="stylesheet" href="~/styles/StyleSheet.css" type="text/css" />
+</head>
+<body>
+    <h1>TIME</h1>
+    <h2>Machine</h2>
+    <h3>We found @Model.ToArray().Length Results</h3>
+
+    @foreach(var person in Model)
+    {
+    <div>
+        <h4>@person.Name (@person.BirthYear - @person.DeathYear)</h4>
+        <p>@person.Year @person.Honor</p>
+        <p>@person.Title in @person.Country</p>
+        <p>@person.Category</p>
+        <p>@person.Context</p>
+    </div>
+    }
+
+
+    <a href="Index">Return To Search Again!</a>
+</body>

@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html >
+<head>
+    <title>"Time" Machine: Choose a Year Range</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kameron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/styles/Reset.css" type="text/css" />
+    <link rel="stylesheet" href="~/styles/StyleSheet.css" type="text/css" />
+
+</head>
+<body>
+    <h1>TIME</h1>
+    <h2>Machine</h2>
+    <main>
+        <p>Pick a range of years between 1927 and 2016, and I'll show you all the TIME people of the year:</p>
+        <form method="post">
+            <label name="StartYear">
+                Starting Year:
+                <input type="number" min="1927" max="2016" name="StartYear" />
+            </label>
+            <label name="EndYear">
+                Ending Year:
+                <input type="number" min="1927" max="2016" name="EndYear" />
+            </label>
+            <button type="submit">Show Persons</button>
+        </form>
+    </main>
+
+</body>
