@@ -27,3 +27,4 @@ C:\Users\harry\Desktop\code\week1-dotnet\Lab11-MVC\TimePersonMVC\TimePersonMVC\o
 C:\Users\harry\Desktop\code\week1-dotnet\Lab11-MVC\TimePersonMVC\TimePersonMVC\obj\Debug\netcoreapp3.1\TimePersonMVC.dll
 C:\Users\harry\Desktop\code\week1-dotnet\Lab11-MVC\TimePersonMVC\TimePersonMVC\obj\Debug\netcoreapp3.1\TimePersonMVC.pdb
 C:\Users\harry\Desktop\code\week1-dotnet\Lab11-MVC\TimePersonMVC\TimePersonMVC\obj\Debug\netcoreapp3.1\TimePersonMVC.csproj.CopyComplete
+C:\Users\harry\Desktop\code\week1-dotnet\Lab11-MVC\TimePersonMVC\TimePersonMVC\obj\Debug\netcoreapp3.1\Razor\Views\Home\Results.cshtml.g.cs

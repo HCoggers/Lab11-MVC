@@ -1,0 +1,21 @@
+﻿@model IEnumerable<TimePersonMVC.Models.TimePerson> 
+
+<!DOCTYPE html>
+<head>
+    <title>"Time" Machine: Results!</title>
+</head>
+<body>
+    <h1>We found @Model.ToArray().Length Results</h1>
+
+    @foreach(var person in Model)
+    {
+        <h2>@person.Name (@person.BirthYear - @person.DeathYear)</h2>
+        <p>@person.Year @person.Honor</p>
+        <p>@person.Title in @person.Country</p>
+        <p>@person.Category</p>
+        <p>@person.Context</p>
+    }
+
+
+    <a href="Index">Return To Search Again!</a>
+</body>
