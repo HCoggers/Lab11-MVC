@@ -17,15 +17,15 @@ namespace TimePersonMVC.Controllers
         [HttpPost]
         public IActionResult Index(int startYear, int endYear)
         {
-            TimePerson[] persons = ReadPOTYFile(startYear, endYear);
-            return RedirectToAction( "Results", persons);
+            List<TimePerson> persons = ReadPOTYFile(startYear, endYear);
+            return RedirectToAction("Results", persons);
         }
-        public IActionResult Results(TimePerson[] list)
+        public IActionResult Results(TimePerson[] persons)
         {
-            return View(list);
+            return View(persons);
         }
 
-        static TimePerson[] ReadPOTYFile(int start, int end)
+        static List<TimePerson> ReadPOTYFile(int start, int end)
         {
             String[] stringPeople = System.IO.File.ReadAllLines("C:/Users/harry/Desktop/code/week1-dotnet/Lab11-MVC/TimePersonMVC/TimePersonMVC/personOfTheYear.csv");
             TimePerson[] timePeople = new TimePerson[stringPeople.Length - 1];
@@ -59,7 +59,7 @@ namespace TimePersonMVC.Controllers
                          where person.Year >= start && person.Year <= end
                          select person;
 
-            TimePerson[] queriedPeople = people.ToArray();
+            List<TimePerson> queriedPeople = people.ToList();
 
             return queriedPeople;
         }
