@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -18,8 +19,14 @@ namespace TimePersonMVC.Models
         public string Context { get; set; }
         public List<TimePerson> ReadPOTYFile(int start, int end)
         {
-            String[] stringPeople = System.IO.File.ReadAllLines("personOfTheYear.csv");
+
+            string path = Environment.CurrentDirectory;
+            string newPath = Path.GetFullPath(Path.Combine(path, @"wwwroot\personOfTheYear.csv"));
+
+            String[] stringPeople = System.IO.File.ReadAllLines(newPath);
             TimePerson[] timePeople = new TimePerson[stringPeople.Length - 1];
+
+
 
             for (int i = 1; i < stringPeople.Length; i++)
             {
