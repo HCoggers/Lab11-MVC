@@ -17,7 +17,14 @@ namespace TimePersonMVC.Models
         public string Title { get; set; }
         public string Category { get; set; }
         public string Context { get; set; }
-        public List<TimePerson> ReadPOTYFile(int start, int end)
+
+        /// <summary>
+        /// Reads a csv file of Time's People of the year, filters them by the inputted start and end year, and returns a list of TimePerson Objects parsed from that file
+        /// </summary>
+        /// <param name="start">user inputted start year >= 1927</param>
+        /// <param name="end">user inputted end year <= 2016</param>
+        /// <returns>List of TimePerson objects, filtered by year range</returns>
+        public List<TimePerson> GetPersons(int start, int end)
         {
 
             string path = Environment.CurrentDirectory;
