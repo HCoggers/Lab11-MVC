@@ -8,10 +8,10 @@ This web application will show you all of TIME magazine's Person-Of-The-Year win
 
 ## Visual
 
-[Image 1](assets/Visual.png)
+![Image 1](assets/Visual.png)
 
 ## Use
 
-Just go to [THIS LINK](google.com) and enter two dates between 1927 and 2016, and press SUBMIT!
+Just go to [THIS LINK](https://timepersonmachineapp.azurewebsites.net) and enter two dates between 1927 and 2016, and press SUBMIT!
 
 "TIME" Machine v1.0
